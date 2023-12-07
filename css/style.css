@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/* Configurações globais */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo padrão para o corpo da página */
+body {
+    color: #263138;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #FF9A6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+/* Estilização dos links no cabeçalho */
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 32px;
+}
+
+/* Estilização da seção de início */
+section#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: relative;
+}
+
+/* Estilos para títulos h1 e h2 */
+h1, h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+/* Estilização para parágrafos com classe paragrafo */
+p.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+/* Estilização de botões com classe button */
+a.button {
+    background-color: #FF725E;
+    padding: 16px 32px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Estilização de botões transparentes com classe transparent-button */
+a.transparent-button {
+    background-color: transparent;
+    color: #FF725E;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+/* Estilização de imagens com posição absoluta */
+img.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+/* Estilização para seções "clinica" e "duvidas" */
+section#clinica, section#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+/* Estilização para listas dentro da seção "clinica" */
+section#clinica li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+/* Estilização para seção "farmacia" */
+section#farmacia {
+    padding: 64px 80px;
+    text-align: center;
+}
+
+/* Estilização para imagens dentro da seção "farmacia" */
+section#farmacia img {
+    margin: 64px auto;
+}
+
+/* Estilização para parágrafos dentro da seção "farmacia" */
+section#farmacia p.paragrafo {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Estilização para a div com classe "duvida" */
+div.duvida {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Estilização para títulos h3 dentro da div "duvida" */
+div.duvida h3 {
+    border: 2px solid #FF725E;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização para imagens dentro de h3 na div "duvida" */
+div.duvida h3 img {
+    margin-right: 16px;
+}
+
+/* Estilização para parágrafos dentro da div "duvida" */
+div.duvida p.paragrafo {
+    border-right: 1px solid #FF725E;
+    border-bottom: 1px solid #FF725E;
+    border-left: 1px solid #FF725E;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    width: 100%;
+
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+div.duvida.ativa p.paragrafo {
+    padding: 24px;
+    height: fit-content;
+    opacity: 1;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+}
+
+/* Estilização para imagens e títulos fortes (strong) dentro do rodapé */
+footer img, footer strong.titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Estilização para links no rodapé */
+footer > div > nav > a {
+    color: #263138;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    min-width: 200px;
+}
+
+/* Estilização para parágrafos no rodapé */
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+/* Estilização para links dentro de parágrafos no rodapé */
+footer > div > p > a {
+    color: #263138;
+    text-decoration: none;
+}
+
+/* Estilização para a div com id "copyright" */
+div#copyright {
+    background-color: #263138;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+/* Estilização para links dentro da div "copyright" */
+div#copyright a {
+    color: #FF9A6C;
+}
+
+/* Estilização para links quando hover (sobre eles) */
+a:hover {
+    color: #3a4b55;
+    text-decoration: underline;
+}
